@@ -1,0 +1,310 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>隱形眼鏡品牌比較</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: tabs for replacement cycle on top, then a 3-slot side-by-side comparison table with a sticky label column. */
+:root{
+  --bg:#f3f6f7; --surface:#ffffff; --ink:#15262d; --muted:#5b6d74; --line:#d8e2e5;
+  --accent:#0e7c86; --accent-soft:#e0f1f2; --warn:#9a5b00; --warn-soft:#fdf1dc; --track:#e6edef;
+  --jnj:#1d4f9c; --bl:#1a8a8f; --alcon:#4b3b8f; --cooper:#b0472e;
+  --sans:"Noto Sans TC",-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f181b; --surface:#172428; --ink:#e4eef0; --muted:#93a8ae; --line:#2a3b40;
+  --accent:#4cc3cc; --accent-soft:#163b3f; --warn:#f2b866; --warn-soft:#3a2c14; --track:#24353a;
+  --jnj:#7fa8ec; --bl:#5fcdd2; --alcon:#a99ae6; --cooper:#ec8f76; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f181b; --surface:#172428; --ink:#e4eef0; --muted:#93a8ae; --line:#2a3b40;
+  --accent:#4cc3cc; --accent-soft:#163b3f; --warn:#f2b866; --warn-soft:#3a2c14; --track:#24353a;
+  --jnj:#7fa8ec; --bl:#5fcdd2; --alcon:#a99ae6; --cooper:#ec8f76; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.top{padding-block:28px 16px}
+h1{font-size:1.6rem;margin:0;font-weight:700;letter-spacing:.02em;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;font-size:.9rem}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);max-width:520px}
+.tabs button{font:inherit;font-size:1.05rem;font-weight:700;border:0;background:transparent;color:var(--ink);padding:12px 8px;cursor:pointer;letter-spacing:.04em}
+.tabs button+button{border-left:1px solid var(--line)}
+.tabs button[aria-pressed="true"]{background:var(--accent);color:#fff}
+button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.scroller{overflow:hidden;margin-block:20px 12px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:separate;border-spacing:0;width:100%;table-layout:fixed}
+col.lab{width:96px}
+th,td{padding:12px 14px;vertical-align:top;text-align:left;border-bottom:1px solid var(--line)}
+#vals tr:last-child>*{border-bottom:0}
+th.rowh{position:sticky;left:0;background:var(--surface);font-size:.85rem;color:var(--muted);font-weight:500;z-index:1;border-right:1px solid var(--line)}
+th.rowh small{display:block;font-size:.68rem;font-weight:400}
+td+td{border-left:1px solid var(--line)}
+.slot{display:flex;flex-direction:column;gap:8px}
+.slot .n{font-size:.7rem;color:var(--muted);letter-spacing:.1em;font-weight:500}
+select{font:inherit;font-size:.9rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:7px 30px 7px 10px;width:100%;appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
+  background-position:calc(100% - 16px) 55%,calc(100% - 11px) 55%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
+select:disabled{opacity:.55;cursor:not-allowed}
+.brandline{height:3px;border-radius:2px;background:var(--line)}
+.pname{display:none;font-size:.74rem;font-weight:700;line-height:1.35}
+.meta{font-size:.78rem;color:var(--muted)}
+.meta b{font-family:var(--mono);color:var(--ink);font-weight:500}
+.val{font-family:var(--mono);font-size:1.15rem;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.val.txt{font-family:var(--sans);font-size:.92rem}
+.unit{font-size:.75rem;color:var(--muted);margin-left:3px;font-family:var(--sans)}
+.bar{height:6px;background:var(--track);border-radius:3px;margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.tag{display:inline-block;font-size:.68rem;padding:1px 6px;border-radius:5px;background:var(--warn-soft);color:var(--warn);margin-top:4px}
+.best{display:inline-block;font-size:.68rem;padding:1px 6px;border-radius:5px;background:var(--accent-soft);color:var(--accent);margin-left:6px;font-family:var(--sans);vertical-align:middle}
+.dash{color:var(--muted)}
+.pending{font-size:.8rem;color:var(--warn);background:var(--warn-soft);border-radius:8px;padding:6px 8px}
+footer{color:var(--muted);font-size:.78rem;padding-block:4px 32px}
+footer p{margin:4px 0}
+@media (max-width:640px){
+  header.top{padding-block:18px 10px}
+  h1{font-size:1.3rem}
+  .sub{font-size:.8rem}
+  .tabs{max-width:none}
+  .tabs button{font-size:.95rem;padding:10px 4px}
+  .scroller{margin-block:12px 10px;border-radius:10px}
+  col.lab{width:44px}
+  th,td{padding:8px 5px}
+  th.rowh{font-size:.72rem;padding:8px 4px;writing-mode:horizontal-tb}
+  th.rowh small{display:none}
+  .slot{gap:5px}
+  .slot .n{font-size:.62rem;letter-spacing:.04em}
+  select{font-size:.72rem;padding:5px 16px 5px 5px;border-radius:7px;background-position:calc(100% - 9px) 55%,calc(100% - 5px) 55%;background-size:4px 4px}
+  .pname{display:block}
+  .meta{font-size:.66rem;line-height:1.35}
+  .val{font-size:.88rem}
+  .val.txt{font-size:.72rem;line-height:1.4}
+  .unit{display:none}
+  .best{display:block;width:max-content;margin:2px 0 0}
+  .tag{font-size:.6rem;padding:1px 4px}
+  .pending{font-size:.66rem;padding:4px 5px}
+  footer{font-size:.7rem}
+}
+.pages{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--track);padding:4px;border-radius:12px;max-width:520px;margin-bottom:16px}
+.pages button{font:inherit;font-weight:700;border:0;border-radius:9px;background:transparent;color:var(--muted);padding:10px 8px;cursor:pointer}
+.pages button[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.fgroup{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.fgroup .flab{font-size:.78rem;color:var(--muted);font-weight:500;min-width:64px}
+.chip{font:inherit;font-size:.88rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:500}
+.count{font-size:.85rem;color:var(--muted);margin:4px 0 10px}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;margin-bottom:24px}
+.rcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.rtop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.rbrand{font-size:.7rem;font-weight:700;letter-spacing:.06em;display:flex;align-items:center;gap:5px}
+.rbrand i{width:7px;height:7px;border-radius:50%;background:currentColor;display:inline-block}
+.rname{font-weight:700;font-size:1rem;line-height:1.35}
+.rprice{text-align:right;flex-shrink:0;font-family:var(--mono);font-size:1rem}
+.rprice small{display:block;font-family:var(--sans);font-size:.7rem;color:var(--muted)}
+.pills{display:flex;gap:5px;flex-wrap:wrap}
+.pill{font-size:.7rem;padding:1px 7px;border-radius:5px;background:var(--accent-soft);color:var(--accent);font-weight:500}
+.pill.alt{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.rspec{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:0;border-top:1px solid var(--line);padding-top:8px}
+.rspec dt{font-size:.66rem;color:var(--muted)}
+.rspec dd{margin:0;font-family:var(--mono);font-size:.9rem;overflow-wrap:anywhere}
+.rspec .wide{grid-column:1/-1}
+.rspec .wide dd{font-family:var(--sans);font-size:.82rem}
+.rcard mark{background:var(--warn-soft);color:var(--warn);border-radius:4px;padding:0 3px}
+.sgroup{margin-bottom:18px}
+.sgroup h2{font-size:1.02rem;margin:0 0 8px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+.sgroup h2 small{font-size:.75rem;color:var(--muted);font-weight:400}
+.sgroup .results{margin-bottom:0}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:20px;color:var(--muted);background:var(--surface)}
+@media (max-width:640px){.pages{max-width:none}.results{grid-template-columns:1fr}.fgroup .flab{min-width:100%}}
+</style>
+
+<header class="top wrap">
+  <h1>隱形眼鏡品牌比較</h1>
+  <p class="sub" id="pgsub">先選拋棄週期，再在三欄各選一個品牌與產品，並排比較價格、透氧、含水量、弧度、直徑與材質。</p>
+</header>
+
+<main class="wrap">
+  <div class="pages" role="tablist" aria-label="分頁">
+    <button type="button" role="tab" id="tab-compare" data-pg="compare" aria-selected="true">隱形眼鏡比較</button>
+    <button type="button" role="tab" id="tab-filter" data-pg="filter" aria-selected="false">篩選</button>
+  </div>
+  <section id="pg-compare">
+    <div class="tabs" id="tabs" role="group" aria-label="拋棄週期"></div>
+    <div class="scroller">
+      <table>
+        <colgroup><col class="lab"><col><col><col></colgroup>
+        <tbody id="head"></tbody><tbody id="vals"></tbody>
+      </table>
+    </div>
+  </section>
+  <section id="pg-filter" hidden>
+    <div class="fgroup" id="f-type"></div>
+    <div class="fgroup" id="f-cat"></div>
+    <div class="fgroup" id="f-mat"></div>
+    <div class="fgroup" id="f-bc"></div>
+    <div class="count" id="f-count"></div>
+    <div id="f-results"></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>透氧 Dk/t 單位為 ×10⁻⁹（嬌生標示為邊緣／屏障校正值）。數字越高，代表越多氧氣能穿過鏡片到達角膜。博士倫部分產品只標示「透氧率」（材料 Dk 值，非 Dk/t），不能與 Dk/t 直接比較，最高值標記也不會算入。</p>
+  <p>篩選的材質分類：材質名稱含「矽水膠」歸為矽水膠，其餘（含保水膠）歸為水膠。弧度區間：有兩種基弧的產品（例如 8.5 / 9.0）以較小的基弧歸類，只出現在「8.5 以內」。每片價格以建議售價除以片數計算，有多種包裝時取最划算的一種。雙週拋包含博士倫雙週拋與嬌生二週拋。彩色鏡片不列入比較。酷柏水膠系列規格表未標示透氧。</p>
+  <p id="sources"></p>
+</footer>
+
+<script>
+const DATA = {"_說明": "隱形眼鏡規格資料，依照片規格表轉錄。type: daily=日拋, weekly=週拋/雙週拋, monthly=月拋。cat: sphere=球面, toric=散光, multifocal=多焦點/老花, color=彩片。價格單位新台幣，null 表示規格表未列。", "brands": [{"id": "jnj", "name": "嬌生", "en": "Johnson & Johnson · ACUVUE 安視優", "source": "安視優規格表 2025120 202505、歐舒適系列規格表 2026071 202603、特約經銷商建議售價表 2026071 202603、歐舒適極潤多焦點海報 2025037 202502"}, {"id": "bl", "name": "博士倫", "en": "Bausch + Lomb", "source": "博士倫鏡片產品規格表 2026（TW-VC-2026-02-051）"}, {"id": "alcon", "name": "愛爾康", "en": "Alcon", "source": "愛爾康規格表 ver.2024.1；愛爾康全系列產品售價表（TW-PR1-VCL-2600003）"}, {"id": "cooper", "name": "酷柏", "en": "CooperVision", "source": "酷柏規格表（日拋、雙週拋、月拋）及寶島眼鏡產品目錄價格"}], "products": [{"brand": "alcon", "type": "daily", "cat": "sphere", "series": "DAILIES TOTAL1 水梯小金盒系列", "name": "水梯球面日拋", "pieces": "30片", "price": "1200", "material": "矽水膠雙水層鏡片（新水層鏡片，漸層水梯）", "water": "33%～接近100%", "dia": "14.1", "bc": "8.5", "dk": "156", "dkLabel": "Dk/t (@-3.00D)", "origin": "美國、德國", "power": [{"label": "球面度數", "lines": ["-0.50 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）", "正度數需國外訂貨：+0.50 ～ +6.00（0.25一級）"]}]}, {"brand": "alcon", "type": "daily", "cat": "toric", "series": "DAILIES TOTAL1 水梯小金盒系列", "name": "水梯散光日拋", "pieces": "30片", "price": "1600", "material": "矽水膠雙水層鏡片（新水層鏡片，漸層水梯）", "water": "33%～接近100%", "dia": "14.5", "bc": "8.6", "dk": "127", "dkLabel": "Dk/t (@-3.00D)", "origin": "德國", "power": [{"label": "球面度數", "lines": ["-0.00 ～ -6.00（0.25一級）", "-6.50 ～ -8.00（0.50一級）", "正度數需國外訂貨：+0.25 ～ +4.00（0.25一級）"]}, {"label": "散光度數", "lines": ["-0.75 / -1.25 / -1.75 / -2.25", "軸度常備 10°、20°、160°、170°、180°，其餘軸度皆需國外訂貨（2024 版規格表另列 90°）"]}]}, {"brand": "alcon", "type": "daily", "cat": "multifocal", "series": "DAILIES TOTAL1 水梯小金盒系列", "name": "水梯多焦點日拋", "pieces": "30片", "price": "2100", "material": "矽水膠雙水層鏡片（新水層鏡片，漸層水梯）", "water": "33%～接近100%", "dia": "14.1", "bc": "8.5", "dk": "156", "dkLabel": "Dk/t (@-3.00D)", "origin": "德國", "power": [{"label": "球面度數", "lines": ["-0.00 ～ -10.00（0.25一級）", "正度數需國外訂貨：+0.25 ～ +6.00（0.25一級）"]}, {"label": "ADD", "lines": ["Low：+1.25 以下", "Med：+1.50 ～ +2.00", "Hi：+2.25 ～ +2.50"]}]}, {"brand": "alcon", "type": "daily", "cat": "sphere", "series": "PRECISION1 水感日拋", "name": "水感鏡片球面日拋", "pieces": "30片", "price": "700", "material": "矽水膠雙水層鏡片（新水層鏡片）", "water": "51%～≥80%", "dia": "14.2", "bc": "8.3", "dk": "100", "dkLabel": "Dk/t (@-3.00D)", "origin": "德國、新加坡", "power": [{"label": "球面度數", "lines": ["-0.50 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）", "正度數需國外訂貨：+0.50 ～ +6.00（0.25一級）、+6.50 ～ +8.00（0.50一級）"]}]}, {"brand": "alcon", "type": "daily", "cat": "toric", "series": "PRECISION1 水感日拋", "name": "水感鏡片散光日拋", "pieces": "30片", "price": "1080", "material": "矽水膠雙水層鏡片（新水層鏡片）", "water": "51%～≥80%", "dia": "14.5", "bc": "8.5", "dk": "90", "dkLabel": "Dk/t (@-3.00D)", "origin": "德國", "power": [{"label": "球面度數", "lines": ["-0.00 ～ -6.00（0.25一級）", "-6.50 ～ -8.00（0.50一級）", "正度數需國外訂貨：+0.25 ～ +4.00（0.25一級）"]}, {"label": "散光度數", "lines": ["-0.75 / -1.25 / -1.75 / -2.25", "軸度常備 10°、20°、160°、170°、180°，其餘軸度需國外訂貨"]}]}, {"brand": "alcon", "type": "daily", "cat": "color", "series": "Freshlook 彩色日拋系列", "name": "小星瞳夢境系列", "pieces": "10片", "price": "330", "material": "水膠單層鏡片", "water": "55%", "dia": "14.2", "bc": "8.6", "dk": "20", "dkLabel": "Dk/t (@-3.00D)", "origin": "韓國", "colors": ["暖楓褐", "冰河灰", "湖水藍"], "power": [{"label": "供應度數", "lines": ["0度", "-0.50 ～ -6.00（0.25一級）", "-6.50 ～ -8.00（0.50一級）"]}], "notes": ["各顏色單獨換貨，不可互換"]}, {"brand": "alcon", "type": "daily", "cat": "color", "series": "Freshlook 彩色日拋系列", "name": "小星瞳輕奢系列", "pieces": "10片", "price": "330", "material": "水膠單層鏡片", "water": "55%", "dia": "14.2", "bc": "8.6", "dk": "20", "dkLabel": "Dk/t (@-3.00D)", "origin": "韓國", "colors": ["焦糖栗", "玫瑰金"], "power": [{"label": "供應度數", "lines": ["0度", "-0.50 ～ -6.00（0.25一級）", "-6.50 ～ -8.00（0.50一級）"]}], "notes": ["各顏色單獨換貨，不可互換"]}, {"brand": "alcon", "type": "daily", "cat": "color", "series": "Freshlook 彩色日拋系列", "name": "自然系列", "pieces": "10片", "price": "300", "material": "水膠單層鏡片", "water": "69%", "dia": "13.8", "bc": "8.6", "dk": "26", "dkLabel": "Dk/t (@-3.00D)", "origin": "德國、新加坡", "colors": ["星鑽棕", "星鑽黑"], "power": [{"label": "供應度數", "lines": ["0度", "-0.50 ～ -6.00（0.25一級）", "-6.50 ～ -8.00（0.50一級）"]}], "notes": ["各顏色單獨換貨，不可互換"]}, {"brand": "alcon", "type": "daily", "cat": "color", "series": "Freshlook 彩色日拋系列", "name": "睛艷彩色系列", "pieces": "10片", "price": "280", "material": "水膠單層鏡片", "water": "69%", "dia": "13.8", "bc": "8.6", "dk": "26", "dkLabel": "Dk/t (@-3.00D)", "origin": "德國", "colors": ["灰", "棕", "藍"], "power": [{"label": "供應度數", "lines": ["0度", "-0.50 ～ -6.00（0.25一級）", "-6.50 ～ -8.00（0.50一級）"]}], "notes": ["僅此系列 3 色可互換"]}, {"brand": "alcon", "type": "daily", "cat": "sphere", "series": "DAILIES AquaComfort PLUS 多水潤日拋系列", "name": "多水潤球面日拋", "pieces": "30片", "price": "500", "material": "水膠單層鏡片", "water": "69%", "dia": "14.0", "bc": "8.7", "dk": "26", "dkLabel": "Dk/t (@-3.00D)", "origin": "美國、德國、新加坡", "power": [{"label": "球面度數", "lines": ["-0.50 ～ -6.00（0.25一級）", "-6.50 ～ -10.00（0.50一級）", "正度數需國外訂貨：+0.50 ～ +6.00（0.25一級）"]}]}, {"brand": "alcon", "type": "daily", "cat": "multifocal", "series": "DAILIES AquaComfort PLUS 多水潤日拋系列", "name": "多水潤多焦點日拋", "pieces": "30片", "price": "1350", "material": "水膠單層鏡片", "water": "69%", "dia": "14.0", "bc": "8.7", "dk": "26", "dkLabel": "Dk/t (@-3.00D)", "origin": "美國", "power": [{"label": "球面度數", "lines": ["-0.00 ～ -10.00（0.25一級）", "正度數需國外訂貨：+0.25 ～ +6.00（0.25一級）"]}, {"label": "ADD", "lines": ["Low：+1.25 以下", "Med：+1.50 ～ +2.00", "Hi：+2.25 ～ +2.50"]}]}, {"brand": "alcon", "type": "monthly", "cat": "sphere", "series": "AIR OPTIX 舒視氧親水聚合月拋系列", "name": "舒視氧親水聚合球面月拋", "pieces": "3片", "price": "580", "material": "矽水膠單層鏡片", "water": "33%", "dia": "14.2", "bc": "8.6", "dk": "138", "dkLabel": "Dk/t (@-3.00D)", "origin": "馬來西亞", "power": [{"label": "球面度數", "lines": ["-0.25 ～ -8.00（0.25一級）", "-8.50 ～ -12.00（0.50一級）", "正度數需國外訂貨：+0.25 ～ +6.00（0.25一級）、+6.50 ～ +8.00（0.50一級）"]}]}, {"brand": "alcon", "type": "monthly", "cat": "toric", "series": "AIR OPTIX 舒視氧親水聚合月拋系列", "name": "舒視氧親水聚合散光月拋", "pieces": "3片", "price": "970", "material": "矽水膠單層鏡片", "water": "33%", "dia": "14.5", "bc": "8.7", "dk": "108", "dkLabel": "Dk/t (@-3.00D)", "origin": "馬來西亞、印尼", "power": [{"label": "球面度數", "lines": ["-0.00 ～ -6.00（0.25一級）", "-6.50 ～ -10.00（0.50一級）", "正度數需國外訂貨：+0.25 ～ +6.00（0.25一級）"]}, {"label": "散光度數", "lines": ["-0.75 / -1.25 / -1.75 / -2.25", "軸度：全軸度（10度一級）", "台灣備貨：10 / 20 / 90 / 160 / 170 / 180"]}]}, {"brand": "alcon", "type": "monthly", "cat": "multifocal", "series": "AIR OPTIX 舒視氧親水聚合月拋系列", "name": "舒視氧親水聚合多焦點月拋", "pieces": "3片", "price": "1290", "material": "矽水膠單層鏡片", "water": "33%", "dia": "14.2", "bc": "8.6", "dk": "138", "dkLabel": "Dk/t (@-3.00D)", "origin": "馬來西亞", "power": [{"label": "球面度數", "lines": ["-0.00 ～ -10.00（0.25一級）", "正度數需國外訂貨：+0.25 ～ +6.00（0.25一級）"]}, {"label": "ADD", "lines": ["Low：+1.25 以下", "Med：+1.50 ～ +2.00", "Hi：+2.25 ～ +2.50"]}]}, {"brand": "bl", "type": "daily", "cat": "sphere", "series": "SofLens 舒服能", "name": "舒服能每日拋", "pieces": "30片", "price": "550", "material": "Hilafilcon B（水膠）", "water": "59%", "dia": "14.2", "bc": "8.6", "dk": "24", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["-0.50、-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -9.00（0.50一級）"]}]}, {"brand": "bl", "type": "daily", "cat": "sphere", "series": "Biotrue 舒視能", "name": "舒視能每日拋", "pieces": "30片", "price": "650", "material": "nesofilcon A（保水膠）", "water": "78%", "dia": "14.2", "bc": "8.6", "dk": "42", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["-0.50、-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）"]}]}, {"brand": "bl", "type": "daily", "cat": "sphere", "series": "ULTRA One Day 奧澈", "name": "奧澈每日拋", "pieces": "30片", "price": "1050", "material": "kalifilcon A（矽水膠）", "water": "55%", "dia": "14.2", "bc": "8.6", "dk": "134", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["-0.50、-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）"]}, {"label": "國外訂貨", "lines": ["+6.00 ～ +0.25（0.25一級）"]}]}, {"brand": "bl", "type": "daily", "cat": "toric", "series": "Biotrue 舒視能", "name": "舒視能散光每日拋", "pieces": "30片", "price": "1050", "material": "nesofilcon A（保水膠）", "water": "78%", "dia": "14.5", "bc": "8.4", "dk": "42", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["0.00 ～ -6.00（0.25一級）、-6.50 ～ -9.00（0.50一級）：散光 -0.75 / -1.25 / -1.75 / -2.25", "0.00 ～ -6.00（0.50一級）：散光 -2.75", "軸度：10 / 20 / 90 / 160 / 170 / 180"]}, {"label": "國外訂貨", "lines": ["0.00 ～ -6.00（0.25一級）：散光 -0.75/-1.25/-1.75 軸度 30～80、100～150（每10度一級）；散光 -2.25 軸度 70/80/100/110", "-6.50 ～ -9.00（0.50一級）：散光 -0.75/-1.25/-1.75 軸度 60/70/80/100/110/120", "+4.00 ～ +0.25（0.25一級）：散光 -0.75/-1.25/-1.75 軸度 10/20/70/80/90/100/110/160/170/180；散光 -2.25 軸度 10/20/80/90/100/160/170/180"]}]}, {"brand": "bl", "type": "daily", "cat": "multifocal", "series": "Biotrue 舒視能", "name": "舒視能老花每日拋", "pieces": "30片", "price": "1200", "material": "nesofilcon A（保水膠）", "water": "78%", "dia": "14.2", "bc": "8.6", "dk": "42", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["球面 +3.00 ～ -9.00（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}, {"label": "國外訂貨", "lines": ["球面 +6.00 ～ +3.25（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}]}, {"brand": "bl", "type": "daily", "cat": "multifocal", "series": "ULTRA One Day 奧澈", "name": "輕水氧奧澈老花日拋", "pieces": "10片", "price": "750", "material": "kalifilcon A（矽水膠）", "water": "55%", "dia": "14.2", "bc": "8.6", "dk": "134", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["球面 +3.00 ～ -10.00（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}, {"label": "國外訂貨", "lines": ["球面 +6.00 ～ +3.25（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}]}, {"brand": "bl", "type": "weekly", "cat": "sphere", "typeNote": "雙週拋", "series": "SofLens 舒服能", "name": "舒服能59雙週拋", "pieces": "6片", "price": "500", "material": "Hilafilcon B（水膠）", "water": "59%", "dia": "14.2", "bc": "8.6", "dk": "22", "dkLabel": "透氧率", "power": [{"label": "台灣庫存", "lines": ["-0.50、-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -9.00（0.50一級）"]}, {"label": "國外訂貨", "lines": ["+6.00 ～ 0.00（0.50一級）"]}]}, {"brand": "bl", "type": "weekly", "cat": "toric", "typeNote": "雙週拋", "series": "SofLens 舒服能", "name": "66散光雙週拋", "pieces": "6片", "price": "800", "material": "Alphafilcon A（水膠）", "water": "66%", "dia": "14.5", "bc": "8.5", "dk": "32", "dkLabel": "透氧率", "power": [{"label": "台灣庫存", "lines": ["球面 -0.25 ～ -9.00（-6.00 以上每0.50一級）", "散光 -0.75 / -1.25 / -1.75 / -2.25 / -2.75", "軸度：10 / 20 / 90 / 160 / 170 / 180"]}, {"label": "國外訂貨", "lines": ["球面、散光同台灣庫存", "提供台灣庫存以外軸度，每10度一級，範圍 10° 至 180°"]}]}, {"brand": "bl", "type": "weekly", "cat": "multifocal", "typeNote": "雙週拋", "series": "SofLens 舒服能", "name": "舒服能漸進多焦雙週拋", "pieces": "6片", "price": "950", "material": "Polymacon（水膠）", "water": "38.6%", "dia": "14.5", "bc": "8.8", "dk": "8.4", "dkLabel": "透氧率", "power": [{"label": "台灣庫存", "lines": ["球面 +3.00 ～ -6.00（0.25一級）、-6.50、-7.00", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}, {"label": "國外訂貨", "lines": ["球面 +6.00 ～ +3.25（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}]}, {"brand": "bl", "type": "monthly", "cat": "sphere", "series": "PureVision2 純視二代", "name": "純視二代月拋", "pieces": "1片", "price": "200", "material": "balafilcon A（矽水膠）", "water": "36%", "dia": "14.0", "bc": "8.6", "dk": "130", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["-0.50、-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）"]}]}, {"brand": "bl", "type": "monthly", "cat": "sphere", "series": "ULTRA 輕水氧", "name": "輕水氧奧澈月拋", "pieces": "1片 / 3片", "price": "190 / 550", "material": "samfilcon A（矽水膠）", "water": "46%", "dia": "14.2", "bc": "8.5", "dk": "163", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）"]}, {"label": "國外訂貨", "lines": ["+6.00 ～ +0.00（0.50一級）"]}]}, {"brand": "bl", "type": "monthly", "cat": "toric", "series": "ULTRA 輕水氧", "name": "輕水氧奧澈散光月拋", "pieces": "3片", "price": "850", "material": "samfilcon A（矽水膠）", "water": "46%", "dia": "14.5", "bc": "8.6", "dk": "114", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["球面 0.00 ～ -6.00（0.25一級）、-6.50 ～ -9.00（0.50一級）", "散光 -0.75 / -1.25 / -1.75 / -2.25 / -2.75", "軸度：10 / 20 / 90 / 160 / 170 / 180"]}, {"label": "國外訂貨", "lines": ["球面 +6.00 ～ -6.00（0.25一級）、-6.00 ～ -9.00（0.50一級）", "散光 -0.75 / -1.25 / -1.75 / -2.25 / -2.75", "提供台灣庫存以外軸度，每10度一級，範圍 10° 至 180°"]}]}, {"brand": "bl", "type": "monthly", "cat": "toric", "series": "ULTRA 輕水氧", "name": "輕水氧奧澈散光老花月拋", "pieces": "6片", "price": "3000", "material": "samfilcon A（矽水膠）", "water": "46%", "dia": "14.5", "bc": "8.6", "dk": "114", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["無（NA）"]}, {"label": "國外訂貨", "lines": ["球面 0.00D、-0.50D、-1.00D ～ -6.00D（0.25一級）", "散光 -1.25 / -1.75", "軸度：10 / 90 / 170 / 180", "老花 Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}], "notes": ["散光＋老花多焦點"]}, {"brand": "bl", "type": "monthly", "cat": "multifocal", "series": "PureVision2 純視二代", "name": "純視二代老花月拋", "pieces": "3片", "price": "950", "material": "balafilcon A（矽水膠）", "water": "36%", "dia": "14.0", "bc": "8.6", "dk": "91", "dkLabel": "透氧率", "power": [{"label": "台灣庫存", "lines": ["球面 +3.00 ～ -10.00（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}, {"label": "國外訂貨", "lines": ["球面 +6.00 ～ +3.25（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}]}, {"brand": "bl", "type": "monthly", "cat": "multifocal", "series": "ULTRA 輕水氧", "name": "輕水氧奧澈老花月拋", "pieces": "3片", "price": "1100", "material": "samfilcon A（矽水膠）", "water": "46%", "dia": "14.2", "bc": "8.5", "dk": "163", "dkLabel": "透氧量 Dk/t (@-3.00D)", "power": [{"label": "台灣庫存", "lines": ["球面 +3.00 ～ 0.00D（0.25一級）", "-0.50D、-1.00 ～ -10.00D（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}, {"label": "國外訂貨", "lines": ["球面 +6.00 ～ +3.25（0.25一級）", "ADD Low +0.75 ～ +1.50、High +1.75 ～ +2.50"]}]}, {"brand": "jnj", "type": "daily", "cat": "sphere", "series": "1-DAY ACUVUE MOIST", "name": "超涵水每日拋", "pieces": "每盒 30 / 90 片", "price": "650 / 1760", "material": "Etafilcon A", "water": "58%", "dia": "14.2", "bc": "8.5 / 9.0", "dk": "33.3 ×10⁻⁹", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.084 (@-3.00D)", "tech": "LACREON® 水凝科技", "uv": "UVA>82%、UVB>97%，ANSI 第二級 UV 防護", "power": [{"label": "屈光度範圍", "lines": ["-0.50 ～ -6.00（每25度一級）", "-6.50 ～ -12.00（每50度一級）", "+0.50 ～ +6.00（每25度一級）", "僅基弧 9.0 及 30 片裝有提供遠視度數"]}]}, {"brand": "jnj", "type": "daily", "cat": "toric", "series": "1-DAY ACUVUE MOIST for Astigmatism", "name": "超涵水散光每日拋", "pieces": "每盒 30 片", "price": "1100", "material": "Etafilcon A", "water": "58%", "dia": "14.5", "bc": "8.5", "dk": "31.1 ×10⁻⁹", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.09 (@-3.00D)", "tech": "LACREON® 水凝科技、ASD™ 迅速穩定設計", "uv": "UVA>82%、UVB>97%，ANSI 第二級 UV 防護", "power": [{"label": "平光、近視 -0.50 ～ -6.00（每25度一級）", "lines": ["散光 75、125、175 度：軸度 10° / 20° / 70°–110° / 160°–180°", "散光 225 度：軸度 10° / 20° / 90° / 160°–180°"]}, {"label": "近視 -6.50 ～ -9.00（每50度一級）", "lines": ["散光 75、125、175 度：軸度 10° / 20° / 70°–110° / 160°–180°"]}], "notes": ["近視 650 度以上停止供應散光 225 相關軸度"]}, {"brand": "jnj", "type": "daily", "cat": "multifocal", "series": "1-DAY ACUVUE MOIST MULTIFOCAL", "name": "超涵水多焦點每日拋", "pieces": "每盒 30 片", "price": "1200", "material": "Etafilcon A", "water": "58%", "dia": "14.3", "bc": "8.4", "dk": "33.3 ×10⁻⁹", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.084 (@-3.00D)", "tech": "LACREON® 水凝科技、智能般的鏡片設計", "uv": "UVA>82%、UVB>97%，ANSI 第二級 UV 防護", "power": [{"label": "近視度數", "lines": ["平光；-0.50 ～ -9.00（每25度一級）"]}, {"label": "老花度數", "lines": ["LOW（低度）+1.25D", "MID（中度）+1.75D", "HIGH（高度）+2.50D"]}]}, {"brand": "jnj", "type": "daily", "cat": "multifocal", "series": "1-DAY ACUVUE OASYS MAX MULTIFOCAL", "name": "歐舒適極潤多焦點高透氧矽水膠每日拋", "pieces": "每盒 30 片", "price": "1900", "material": "Senofilcon A 矽水膠", "water": "38%", "dia": "14.3", "bc": "8.4", "dk": "147 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.070 (@-3.00D)", "tech": "TearStable™ 淚膜保濕科技、OptiBlue™ 濾藍光科技、EYE-INSPIRED 智能般鏡片設計", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護；可濾高達 55% 藍光（380–450 nm）", "power": [{"label": "屈光度範圍", "lines": ["平光", "近視 -0.25 ～ -9.00（每25度一級）", "遠視 +0.25 ～ +6.00（每25度一級）"]}, {"label": "老花度數", "lines": ["LOW 低度 +1.25D", "MID 中度 +1.75D", "HIGH 高度 +2.50D"]}], "notes": ["老花新品", "-0.25D、+0.25 ～ +6.00D 為非常備度數，訂購前請與安視優客服人員聯繫"]}, {"brand": "jnj", "type": "daily", "cat": "sphere", "series": "1-DAY ACUVUE OASYS MAX", "name": "歐舒適極潤高透氧矽水膠每日拋", "pieces": "每盒 30 片", "price": "1400", "material": "Senofilcon A 矽水膠", "water": "38%", "dia": "14.3", "bc": "8.5 / 9.0", "dk": "121 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.085 (@-3.00D)", "tech": "TearStable™ 淚膜保濕科技、OptiBlue™ 濾藍光科技", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護；可濾高達 55% 藍光（380–450 nm）", "power": [{"label": "屈光度範圍", "lines": ["-0.50 ～ -6.00（每25度一級）", "-6.50 ～ -12.00（每50度一級）"]}]}, {"brand": "jnj", "type": "daily", "cat": "sphere", "series": "1-DAY ACUVUE OASYS with HydraLuxe", "name": "歐舒適每日拋", "pieces": "每盒 30 片", "price": "1080", "material": "Senofilcon A 矽水膠", "water": "38%", "dia": "14.3", "bc": "8.5 / 9.0", "dk": "121 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.085 (@-3.00D)", "tech": "HydraLuxe™ 淚液融合科技", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護", "power": [{"label": "屈光度範圍", "lines": ["-0.50 ～ -6.00（每25度一級）", "-6.50 ～ -12.00（每50度一級）", "+0.50 ～ +6.00（每25度一級）"]}], "notes": ["遠視 +0.50 ～ +6.00 為非常備度數，訂購前請與安視優客服人員聯繫"]}, {"brand": "jnj", "type": "daily", "cat": "toric", "series": "1-DAY ACUVUE OASYS for ASTIGMATISM", "name": "歐舒適散光每日拋", "pieces": "每盒 30 片", "price": "1450", "material": "Senofilcon A 矽水膠", "water": "38%", "dia": "14.3", "bc": "8.5", "dk": "129 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.08 (@-3.00D)", "tech": "HydraLuxe™ 淚液融合科技、ASD™ 迅速穩定設計", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護", "power": [{"label": "平光、近視 -0.50 ～ -6.00（每25度一級）", "lines": ["散光 75、125、175 度：軸度 10° / 20° / 70°–110° / 160°–180°", "散光 225 度：軸度 10° / 20° / 90° / 160°–180°"]}, {"label": "近視 -6.50 ～ -9.00（每50度一級）", "lines": ["散光 75、125、175 度：軸度 10° / 20° / 70°–110° / 160°–180°"]}], "notes": ["近視 650 度以上停止供應散光 225 相關軸度", "散光軸度 70° / 80° / 100° / 110° 為非常備軸度，訂購前請與安視優客服人員聯繫"]}, {"brand": "jnj", "type": "daily", "cat": "color", "series": "1-DAY ACUVUE DEFINE", "name": "睛漾水凝每日拋（30片）", "pieces": "每盒 30 片", "price": "900", "material": null, "water": null, "dia": null, "bc": null, "dk": null, "dkLabel": "Dk/t", "colors": ["璀璨棕 RH", "璀璨咖 RS", "璀璨褐 RB", "璀璨黑 RC", "炫閃晶 N", "耀眼棕 V", "深邃黑 A"], "power": [], "notes": ["售價表僅列價格與顏色，規格待補", "店家手寫：2 盒 $1700"]}, {"brand": "jnj", "type": "daily", "cat": "color", "series": "1-DAY ACUVUE DEFINE", "name": "睛漾水凝每日拋（10片）", "pieces": "每盒 10 片", "price": "399", "material": null, "water": null, "dia": null, "bc": null, "dk": null, "dkLabel": "Dk/t", "colors": ["星夜啡 SA", "夢境褐 SD", "璀璨星空 RT", "璀璨摩卡 MS", "銀葉灰 FZ", "松果褐 FH", "榛果拿鐵 FL", "野莓果釀 FC"], "power": [], "notes": ["售價表僅列價格與顏色，規格待補"]}, {"brand": "jnj", "type": "weekly", "cat": "sphere", "typeNote": "二週拋", "series": "ACUVUE OASYS with HYDRACLEAR PLUS", "name": "歐舒適二週拋棄式", "pieces": "每盒 6 片", "price": "900", "material": "Senofilcon A 矽水膠", "water": "38%", "dia": "14.0", "bc": "8.4 / 8.8", "dk": "147 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.07 (@-3.00D)", "tech": "Hydraclear® PLUS 進化鎖水科技", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護", "power": [{"label": "屈光度範圍", "lines": ["平光（僅有基弧 8.8）", "-0.50 ～ -6.00（每25度一級）", "-6.50 ～ -12.00（每50度一級）", "+0.50 ～ +6.00（每25度一級）", "+6.50 ～ +8.00（每50度一級）"]}], "notes": ["店家手寫：2 盒 $1700"]}, {"brand": "jnj", "type": "weekly", "cat": "toric", "typeNote": "二週拋", "series": "ACUVUE OASYS for ASTIGMATISM", "name": "歐舒適散光二週拋棄式", "pieces": "每盒 6 片", "price": "1000", "material": "Senofilcon A 矽水膠", "water": "38%", "dia": "14.5", "bc": "8.6", "dk": "129 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.08 (@-3.00D)", "tech": "Hydraclear® PLUS 進化鎖水科技、ASD™ 迅速穩定設計", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護", "power": [{"label": "平光、近視 +0.00 ～ -6.00（每25度一級）", "lines": ["散光 75、125、175 度：軸度 10°–180°", "散光 225 度：軸度 10° / 20° / 70°–110° / 160°–180°"]}, {"label": "近視 -6.50 ～ -9.00（每50度一級）", "lines": ["散光 75、125 度：軸度 10°–180°", "散光 175、225 度：軸度 10° / 20° / 160°–180°"]}], "notes": ["散光軸度 30°–80° / 100°–150° 為非常備軸度，訂購前請與安視優客服人員聯繫"]}, {"brand": "jnj", "type": "weekly", "cat": "sphere", "typeNote": "二週拋", "series": "ACUVUE 2", "name": "安視優二週拋棄式", "pieces": "每盒 6 片", "price": "550", "material": "Etafilcon A", "water": "58%", "dia": "14.0", "bc": "8.7", "dk": "33.3 ×10⁻⁹", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.084 (@-3.00D)", "tech": "—", "uv": "UVA>88%、UVB>99%，ANSI 第二級 UV 防護", "power": [{"label": "屈光度範圍", "lines": ["-0.50 ～ -6.00（每25度一級）", "-6.50 ～ -12.00（每50度一級）"]}]}, {"brand": "jnj", "type": "monthly", "cat": "sphere", "series": "ACUVUE VITA", "name": "悅氧矽水膠高透氧月拋", "pieces": "每盒 6 片", "price": "1000", "material": "Senofilcon C 矽水膠", "water": "41%", "dia": "14.0", "bc": "8.8", "dk": "147 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.07 (@-3.00D)", "tech": "HydraMax™ Technology 鎖水科技", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護", "power": [{"label": "屈光度範圍", "lines": ["-0.50 ～ -6.00（每25度一級）", "-6.50 ～ -12.00（每50度一級）"]}]}, {"brand": "jnj", "type": "monthly", "cat": "toric", "series": "ACUVUE VITA for ASTIGMATISM", "name": "悅氧矽水膠高透氧散光月拋", "pieces": "每盒 6 片", "price": "1780", "material": "Senofilcon C 矽水膠", "water": "41%", "dia": "14.5", "bc": "8.6", "dk": "129 ×10⁻⁹（邊緣校正）", "dkLabel": "Dk/t 屏障校正 (@-3.00D)", "ct": "0.08 (@-3.00D)", "tech": "HydraMax™ Technology 鎖水科技、ASD™ 迅速穩定設計", "uv": "UVA>90%、UVB>99%，ANSI 最高級 UV 防護", "power": [{"label": "平光、近視 -0.50 ～ -6.00（每25度一級）", "lines": ["散光 75、125、175 度：軸度 10°–180°", "散光 225 度：軸度 10° / 20° / 70°–110° / 160°–180°"]}, {"label": "近視 -6.50 ～ -9.00（每50度一級）", "lines": ["散光 75、125、175 度：軸度 10° / 20° / 70°–110° / 160°–180°"]}], "notes": ["近視 650 度以上停止供應散光 225 相關軸度", "散光軸度 30°–150° 為非常備軸度，訂購前請與安視優客服人員聯繫"]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "sphere", "series": "clariti 1 day 矽水膠系列", "name": "珂朗清矽水膠日拋", "pieces": "30片", "price": "650", "material": "somofilcon A（矽水膠）", "water": "56%", "modulus": "0.5", "bc": "8.6", "dia": "14.1", "dk": "86", "uv": "有", "origin": "哥斯大黎加／匈牙利", "power": [{"label": "供應度數", "lines": ["-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -10.00（0.50一級）"]}]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "toric", "series": "clariti 1 day 矽水膠系列", "name": "珂朗清矽水膠散光日拋", "pieces": "30片", "price": "1050", "material": "somofilcon A（矽水膠）", "water": "56%", "modulus": "0.5", "bc": "8.6", "dia": "14.3", "dk": "57", "uv": "有", "origin": "匈牙利", "power": [{"label": "平光、-1.00 ～ -6.00（0.25一級）", "lines": ["散光 -0.75 / -1.25 / -1.75：軸度 10°～180°（10度一級）", "散光 -2.25：軸度 10 / 20 / 70～110 / 160 / 170 / 180"]}, {"label": "-6.50 ～ -9.00（0.50一級）", "lines": ["散光 -0.75 / -1.25 / -1.75：軸度 10 / 20 / 60～120 / 160 / 170 / 180", "散光 -2.25：軸度 10 / 20 / 90 / 160 / 170 / 180"]}]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "multifocal", "series": "clariti 1 day 矽水膠系列", "name": "珂朗清矽水膠3階順視漸進多焦日拋", "pieces": "30片 / 10片", "price": "1350 / 700", "material": "somofilcon A（矽水膠）", "water": "56%", "modulus": "0.5", "bc": "8.6", "dia": "14.1", "dk": "86", "uv": "有", "origin": "哥斯大黎加", "power": [{"label": "供應度數", "lines": ["-12.00 ～ +8.00D（0.25一級；-10.50 以上每0.50一級）"]}, {"label": "ADD", "lines": ["LOW +0.75 ～ +1.25D", "MED +1.50 ～ +1.75D", "HIGH +2.00 ～ +2.50D"]}]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "sphere", "series": "MyDay 矽水膠系列", "name": "美怡天矽水膠日拋", "pieces": "30片", "price": "1000", "material": "stenfilcon A（矽水膠）", "water": "54%", "modulus": "0.4", "bc": "8.4", "dia": "14.2", "dk": "100", "uv": "有", "origin": "美國／英國", "power": [{"label": "供應度數", "lines": ["-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）"]}]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "toric", "series": "MyDay 矽水膠系列", "name": "美怡天矽水膠散光日拋", "pieces": "30片", "price": "1500", "material": "stenfilcon A（矽水膠）", "water": "54%", "modulus": "0.4", "bc": "8.6", "dia": "14.5", "dk": "80", "uv": "有", "origin": "美國", "power": [{"label": "平光、-1.00 ～ -6.00（0.25一級）", "lines": ["散光 -0.75 / -1.25 / -1.75：軸度 10 / 20 / 70 / 80 / 90 / 100 / 110 / 160 / 170 / 180", "散光 -2.25：軸度 10 / 20 / 90 / 160 / 170 / 180"]}, {"label": "-6.50 ～ -10.00（0.50一級）", "lines": ["散光 -0.75 / -1.25 / -1.75：軸度 10 / 20 / 70 / 80 / 90 / 100 / 110 / 160 / 170 / 180", "散光 -2.25：軸度 10 / 20 / 90 / 160 / 170 / 180"]}]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "multifocal", "series": "Proclear 1 day 水膠系列", "name": "寶晴漸進多焦日拋", "pieces": "30片", "price": "1500", "material": "omafilcon A（水膠）", "water": "60%", "modulus": "0.4", "bc": "8.7", "dia": "14.2", "dk": null, "uv": "無", "origin": "美國／英國", "power": [{"label": "供應度數", "lines": ["+6.00 ～ -6.00（0.25一級）", "-6.50 ～ -10.00（0.50一級）", "設計：中央看近"]}]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "sphere", "series": "Biomedics 1 day Extra 水膠系列", "name": "佰美視睛潤日拋", "pieces": "10片", "price": "150", "material": "ocufilcon D（水膠）", "water": "55%", "modulus": "0.4", "bc": "8.6", "dia": "14.2", "dk": null, "uv": "無", "origin": "美國", "power": [{"label": "供應度數", "lines": ["-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -10.00（0.50一級）"]}]}, {"brand": "cooper", "type": "daily", "dkLabel": "透氧量 Dk/t (@-3.00D)", "cat": "toric", "series": "Biomedics 1 day Extra 水膠系列", "name": "佰美視睛潤散光日拋", "pieces": "30片", "price": "860", "material": "ocufilcon D（水膠）", "water": "55%", "modulus": "0.4", "bc": "8.7", "dia": "14.5", "dk": null, "uv": "無", "origin": "美國", "power": [{"label": "平光、-1.00 ～ -6.00（0.25一級）、-6.50 與 -7.00", "lines": ["散光 -0.75 / -1.25 / -1.75：軸度 20 / 90 / 160 / 180"]}, {"label": "-7.50 ～ -10.00（0.50一級）", "lines": ["散光 -0.75 / -1.25 / -1.75：軸度 90 / 180"]}]}, {"brand": "cooper", "dkLabel": "透氧量 Dk/t (@-3.00D)", "type": "weekly", "typeNote": "雙週拋", "cat": "sphere", "series": "Biomedics Now 水膠系列", "name": "佰美視新雙週拋", "pieces": "6片", "price": "350", "material": "ocufilcon D（水膠）", "water": "55%", "bc": "8.6", "dia": "14.2", "dk": null, "ct": "0.075 (@-3.00D)", "uv": "有", "origin": "美國", "power": [{"label": "供應度數", "lines": ["-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -10.00（0.50一級）"]}]}, {"brand": "cooper", "dkLabel": "透氧量 Dk/t (@-3.00D)", "type": "monthly", "cat": "sphere", "series": "Biofinity 矽水膠系列", "name": "佰視明矽水膠月拋", "pieces": "1片 / 6片", "price": "175 / 950", "material": "comfilcon A（矽水膠）", "water": "48%", "bc": "8.6", "dia": "14.0", "dk": "160", "ct": "0.08 (@-3.00D)", "uv": "無", "origin": "美國／英國", "power": [{"label": "供應度數", "lines": ["-0.25 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）", "1 片裝：-1.00 ～ -10.00"]}]}, {"brand": "cooper", "dkLabel": "透氧量 Dk/t (@-3.00D)", "type": "monthly", "cat": "toric", "series": "Biofinity 矽水膠系列", "name": "佰視明散光矽水膠月拋", "pieces": "3片", "price": "800", "material": "comfilcon A（矽水膠）", "water": "48%", "bc": "8.7", "dia": "14.5", "dk": "116", "ct": "0.11 (@-3.00D)", "uv": "無", "origin": "美國／英國", "power": [{"label": "球面度數", "lines": ["平光、-1.00 ～ -6.00（0.25一級）", "-6.50 ～ -10.00（0.50一級）"]}, {"label": "散光度數", "lines": ["-0.75 / -1.25 / -1.75 / -2.25", "軸度 10° ～ 180°（10度一級）"]}]}, {"brand": "cooper", "dkLabel": "透氧量 Dk/t (@-3.00D)", "type": "monthly", "cat": "sphere", "series": "Super-Air 矽水膠系列", "name": "優氧矽水膠月拋", "pieces": "1片 / 6片", "price": "150 / 800", "material": "fanfilcon A（矽水膠）", "water": "55%", "bc": "8.4", "dia": "14.2", "dk": "110", "ct": "0.08 (@-3.00D)", "uv": "有", "origin": "美國／英國", "power": [{"label": "供應度數", "lines": ["-0.25 ～ -6.00（0.25一級）", "-6.50 ～ -12.00（0.50一級）", "1 片裝：-1.00 ～ -10.00"]}]}]};
+DATA.products=DATA.products.filter(p=>p.cat!=="color");
+const TYPES = [["daily","日拋"],["weekly","雙週拋"],["monthly","月拋"]];
+const CATS = {sphere:"球面",toric:"散光",multifocal:"多焦點",color:"彩色"};
+const brandById = Object.fromEntries(DATA.brands.map(b=>[b.id,b]));
+DATA.products.forEach(p=>p.id=p.brand+":"+p.name);
+const DEFAULT_BRANDS=["jnj","bl","alcon"];
+
+let st={type:"daily",slots:[{},{},{}]};
+try{const s=JSON.parse(localStorage.getItem("lens-compare")||"null"); if(s&&s.slots) st=s;}catch(e){}
+const save=()=>{try{localStorage.setItem("lens-compare",JSON.stringify(st))}catch(e){}};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const listFor=(brand)=>DATA.products.filter(p=>p.type===st.type&&p.brand===brand);
+const num=s=>{const m=String(s||"").match(/[\d.]+/);return m?parseFloat(m[0]):null};
+
+function normalize(){
+  st.slots=st.slots.map((s,i)=>{
+    let brand=s.brand||DEFAULT_BRANDS[i];
+    const list=listFor(brand);
+    let product=list.some(p=>p.id===s.product)?s.product:(list[0]?list[0].id:"");
+    return {brand,product};
+  });
+}
+function packs(p){
+  if(!p||!p.price) return [];
+  const n=(String(p.pieces).match(/\d+/g)||[]).map(Number);
+  const pr=String(p.price).split("/").map(x=>parseFloat(x.replace(/[^\d.]/g,"")));
+  if(n.length!==pr.length) return pr.map(v=>({n:null,price:v}));
+  return pr.map((v,i)=>({n:n[i],price:v,each:v/n[i]}));
+}
+const fmt=v=>v>=100?Math.round(v).toLocaleString():(Math.round(v*10)/10).toString();
+function prod(i){return DATA.products.find(p=>p.id===st.slots[i].product)}
+
+function renderTabs(){
+  $("#tabs").innerHTML=TYPES.map(([k,l])=>`<button type="button" data-t="${k}" aria-pressed="${st.type===k}">${l}</button>`).join("");
+}
+function buildHeader(){
+  $("#head").innerHTML=`<tr><th class="rowh" scope="row">產品</th>${[0,1,2].map(i=>`<td><div class="slot"><span class="n">比較 ${i+1}</span>
+    <div class="brandline" id="bl${i}"></div>
+    <select id="b${i}" data-i="${i}" data-k="brand" aria-label="第${i+1}欄品牌"></select>
+    <select id="p${i}" data-i="${i}" data-k="product" aria-label="第${i+1}欄產品"></select>
+    <div id="m${i}"></div></div></td>`).join("")}</tr>`;
+}
+function fillSlot(i,withBrands){
+  const s=st.slots[i], b=brandById[s.brand], list=listFor(s.brand);
+  if(withBrands){
+    $("#b"+i).innerHTML=DATA.brands.map(x=>`<option value="${x.id}">${esc(x.name)}${listFor(x.id).length?"":"（無此類）"}</option>`).join("");
+  }
+  $("#b"+i).value=s.brand;
+  $("#bl"+i).style.background=`var(--${s.brand})`;
+  const ps=$("#p"+i);
+  ps.innerHTML=list.length?list.map(p=>`<option value="${p.id}">${esc(p.name)}（${CATS[p.cat]}）</option>`).join(""):`<option>—</option>`;
+  ps.disabled=!list.length;
+  if(list.length) ps.value=s.product;
+  const p=prod(i);
+  $("#m"+i).innerHTML=p?`<div class="pname">${esc(p.name)}</div>`:`<div class="pending">${esc(b.name)}沒有${TYPES.find(t=>t[0]===st.type)[1]}產品。</div>`;
+}
+function renderTable(){
+  const ps=[0,1,2].map(prod);
+  const isDkt=p=>p&&!/透氧率/.test(p.dkLabel||"");
+  const dkVals=ps.map(p=>isDkt(p)?num(p.dk):null);
+  const dkMax=Math.max(0,...dkVals.filter(v=>v!=null));
+  const each=ps.map(p=>{const e=packs(p).map(k=>k.each).filter(x=>x);return e.length?Math.min(...e):null});
+  const eachMin=Math.min(...each.filter(v=>v!=null));
+  const rows=[
+    ["價格","建議售價",p=>{
+      if(!p) return null;
+      const k=packs(p);
+      if(!k.length) return `<div class="val txt dash">未列售價</div>`;
+      const i=ps.indexOf(p), e=each[i];
+      const cheap=e!=null&&e===eachMin&&each.filter(v=>v!=null).length>1?`<span class="best">每片最低</span>`:"";
+      return k.map(x=>`<div class="val">$${x.price.toLocaleString()}<span class="unit" style="display:inline">${x.n?` / ${x.n}片`:""}</span></div>`).join("")+
+        (e!=null?`<div class="meta">每片約 <b>$${fmt(e)}</b>${cheap}</div>`:"");
+    }],
+    ["透氧","Dk/t",p=>{
+      if(!p) return null;
+      if(!p.dk) return `<div class="val txt dash">規格表未標示</div>`;
+      const v=num(p.dk), dkt=isDkt(p);
+      const best=dkt&&v===dkMax&&dkVals.filter(x=>x!=null).length>1?`<span class="best">最高</span>`:"";
+      const shown=String(p.dk).replace(/[（(]邊緣校正[)）]/,"").replace(/\s*×10⁻⁹/,"");
+      return `<div class="val">${esc(shown)}${best}</div>`+
+        (dkt?`<div class="bar"><i style="width:${Math.max(4,v/170*100)}%"></i></div>`:`<span class="tag">透氧率（Dk），非 Dk/t</span>`);
+    }],
+    ["含水量","%",p=>p&&p.water&&`<div class="val">${esc(p.water)}</div>`],
+    ["弧度","基弧 mm",p=>p&&p.bc&&`<div class="val">${esc(p.bc)}<span class="unit">mm</span></div>`],
+    ["直徑","mm",p=>p&&p.dia&&`<div class="val">${esc(p.dia)}<span class="unit">mm</span></div>`],
+    ["材質","",p=>p&&p.material&&`<div class="val txt">${esc(p.material)}</div>`],
+  ];
+  const html=rows.map(([l,u,f])=>`<tr><th class="rowh" scope="row">${l}${u?`<small>${u}</small>`:""}</th>${ps.map(p=>`<td>${f(p)||`<span class="dash">—</span>`}</td>`).join("")}</tr>`).join("");
+  $("#vals").innerHTML=html;
+}
+function renderAll(){normalize();renderTabs();[0,1,2].forEach(i=>fillSlot(i,true));renderTable();save();}
+
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-t]");if(!b)return;st.type=b.dataset.t;renderAll();});
+$("#head").addEventListener("change",e=>{
+  const el=e.target; if(!el.dataset.k) return;
+  const i=+el.dataset.i;
+  if(el.dataset.k==="brand"){st.slots[i]={brand:el.value};normalize();fillSlot(i,false);}
+  else{st.slots[i].product=el.value;fillSlot(i,false);}
+  renderTable();save();
+});
+buildHeader();
+$("#sources").textContent="資料來源："+DATA.brands.filter(b=>b.source).map(b=>`${b.name}　${b.source}`).join("；")+"。依照片轉錄，實際以廠商最新公告為準。";
+renderAll();
+
+// ---- 篩選分頁 ----
+const matOf=p=>/矽水膠/.test(p.material||"")?"si":"hy";
+const bcsOf=p=>[...new Set((String(p.bc||"").match(/\d\.\d/g)||[]))];
+const bcBand=p=>{const v=bcsOf(p).map(Number);if(!v.length)return null;const m=Math.min(...v);return m<=8.5?"le85":m<=9.0?"le90":null;};
+let fs={type:"all",cat:"all",mat:"all",bc:"all"};
+try{const v=JSON.parse(localStorage.getItem("lens-filter2")||"null"); if(v) fs=Object.assign(fs,v);}catch(e){}
+function chips(id,label,key,opts){
+  $("#"+id).innerHTML=`<span class="flab">${label}</span>`+opts.map(([v,l])=>`<button type="button" class="chip" data-f="${key}" data-v="${v}" aria-pressed="${fs[key]===v}">${l}</button>`).join("");
+}
+function renderFilter(){
+  chips("f-type","拋棄週期","type",[["all","全部"],...TYPES]);
+  chips("f-cat","類型","cat",[["all","全部"],["sphere","球面"],["toric","散光"],["multifocal","多焦點"]]);
+  chips("f-mat","材質","mat",[["all","全部"],["si","矽水膠"],["hy","水膠"]]);
+  chips("f-bc","弧度（基弧）","bc",[["all","全部"],["le85","8.5 以內"],["le90","9.0 以內（不含 8.5 以內）"]]);
+  const list=DATA.products.filter(p=>(fs.type==="all"||p.type===fs.type)&&(fs.cat==="all"||p.cat===fs.cat)&&(fs.mat==="all"||matOf(p)===fs.mat)&&(fs.bc==="all"||bcBand(p)===fs.bc));
+  const order=DATA.brands.map(x=>x.id);
+  list.sort((x,y)=>order.indexOf(x.brand)-order.indexOf(y.brand));
+  const groups=[];
+  list.forEach(p=>{const fam=String(p.series||p.name).replace(/\s+(for ASTIGMATISM|MULTIFOCAL|with .*)$/i,"");const key=p.brand+"|"+fam;let g=groups.find(g=>g.key===key);if(!g)groups.push(g={key,brand:p.brand,series:fam,items:[]});g.items.push(p);});
+  $("#f-count").textContent=`符合 ${groups.length} 個系列、${list.length} 款`;
+  const card=p=>{
+    const b=brandById[p.brand], k=packs(p), e=k.map(x=>x.each).filter(x=>x);
+    const price=k.length?`$${k.map(x=>x.price.toLocaleString()).join(" / ")}<small>${esc(p.pieces)}${e.length?`・每片約 $${fmt(Math.min(...e))}`:""}</small>`:`<small>未列售價</small>`;
+    const dk=!p.dk?"未標示":String(p.dk).replace(/[（(]邊緣校正[)）]/,"").replace(/\s*×10⁻⁹/,"")+(/透氧率/.test(p.dkLabel||"")?"*":"");
+    const bc=fs.bc==="all"?esc(p.bc):`<mark>${esc(p.bc)}</mark>`;
+    return `<article class="rcard"><div class="rtop"><div style="min-width:0"><div class="rname">${esc(p.name)}</div></div><div class="rprice">${price}</div></div>
+      <div class="pills"><span class="pill">${TYPES.find(t=>t[0]===p.type)[1]}</span><span class="pill alt">${CATS[p.cat]}</span><span class="pill alt">${matOf(p)==="si"?"矽水膠":"水膠"}</span></div>
+      <dl class="rspec"><div><dt>透氧</dt><dd>${esc(dk)}</dd></div><div><dt>含水量</dt><dd>${esc(p.water||"—")}</dd></div><div><dt>弧度</dt><dd>${bc}</dd></div><div><dt>直徑</dt><dd>${esc(p.dia||"—")}</dd></div><div class="wide"><dt>材質</dt><dd>${esc(p.material||"—")}</dd></div></dl></article>`;
+  };
+  $("#f-results").innerHTML=groups.length?groups.map(g=>`<section class="sgroup"><h2><span class="rbrand" style="color:var(--${g.brand})"><i></i>${esc(brandById[g.brand].name)}</span>${esc(g.series)}<small>${g.items.length} 款</small></h2><div class="results">${g.items.map(card).join("")}</div></section>`).join(""):`<div class="empty">沒有符合條件的產品，換個條件試試。</div>`;
+  try{localStorage.setItem("lens-filter2",JSON.stringify(fs))}catch(e){}
+}
+$("#pg-filter").addEventListener("click",e=>{const c=e.target.closest("button[data-f]");if(!c)return;fs[c.dataset.f]=c.dataset.v;renderFilter();});
+const SUBS={compare:"先選拋棄週期，再在三欄各選一個品牌與產品，並排比較價格、透氧、含水量、弧度、直徑與材質。",filter:"依拋棄週期、類型、材質與弧度篩選，列出所有符合的產品。標 * 的透氧為博士倫標示的透氧率（Dk）。"};
+function showPage(pg){
+  document.querySelectorAll(".pages button").forEach(b=>b.setAttribute("aria-selected",b.dataset.pg===pg));
+  $("#pg-compare").hidden=pg!=="compare"; $("#pg-filter").hidden=pg!=="filter";
+  $("h1").textContent=pg==="compare"?"隱形眼鏡品牌比較":"隱形眼鏡篩選";
+  $("#pgsub").textContent=SUBS[pg];
+  try{localStorage.setItem("lens-page",pg)}catch(e){}
+}
+document.querySelector(".pages").addEventListener("click",e=>{const b=e.target.closest("button[data-pg]");if(b)showPage(b.dataset.pg);});
+renderFilter();
+let startPg=location.hash==="#filter"?"filter":"compare";
+try{if(!location.hash&&localStorage.getItem("lens-page")==="filter")startPg="filter"}catch(e){}
+showPage(startPg);
+</script>
+
+</body></html>
